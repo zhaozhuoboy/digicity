@@ -15,15 +15,14 @@
   <div id="box"></div>
 
   <script type="text/babel">
-    var Hello = React.createClass({
+    var Hello = React.createClass({// 创建一个类  名字叫 Hello
       render:function(){
         return <h1>hello 你好</h1>;
       }
     });
-    ReactDOM.render(
+    ReactDOM.render(//渲染 Hello 类  到box节点中
       <Hello />,
       document.getElementById('box')
-
     );
 
   </script>
