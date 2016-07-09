@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>002-react-counter</title>
+  <style src="css/base.css"></style>
+  <script type="text/javascript" src="lib/react.js"></script>
+  <script type="text/javascript" src="lib/react-dom.js"></script>
+  <script src="lib/browser.min.js"></script>
+</head>
+<body>
+
+  <div id="box"></div>
+
+  <script type="text/babel">
+
+
+
+    var Counter = React.createClass({
+      getInitialState:function(){
+        return {
+          count:0
+        }
+      },
+      render:function(){
+        return (
+          <div>
+            <h1>Count：{this.state.count}</h1>
+            <button onClick={this.add}>+1</button>
+            <button onClick={this.jian}>-1</button>
+          </div>
+        )
+      },
+      add:function(){
+        this.setState({
+          count:this.state.count+1
+        });
+      },
+      jian:function(){
+        this.setState({
+          count:this.state.count-1
+        });
+      }
+    })
+
+
+    ReactDOM.render(<Counter />,document.getElementById('box'));
+
+  </script>
+</body>
+</html>
