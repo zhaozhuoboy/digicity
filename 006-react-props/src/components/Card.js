@@ -26,6 +26,7 @@ class Card extends Component{
         cursor:"pointer",
         transition:"all 0.3s",
         borderRadius:"20px",
+        border:"1px solid #DC143C"
       },
       left:{
         float:"left",
