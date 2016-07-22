@@ -31,6 +31,7 @@ class Button extends Component {
       <div>
         <AppBar onLeftIconButtonTouchTap={this.click.bind(this)}
                 title="This is My App"
+              
                 iconElementRight={
                   <IconMenu
                           iconButtonElement={<IconButton><MoreVertIcon /></IconButton>}
