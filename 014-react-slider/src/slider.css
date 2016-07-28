@@ -1,0 +1,37 @@
+.banner{
+
+}
+.banner ul{
+  list-style: none;
+  transition: all 1s;
+}
+.banner ul li{
+  float: left;
+  width:25%;
+}
+.banner ul li img{
+  width:100%;
+}
+.banner span{
+  width:30px;
+  height:50px;
+  line-height: 50px;
+  position: absolute;
+  top:50%;
+  font-size: 30px;
+  margin-top: -25px;
+  color:rgba(255,255,255,0.4);
+  background: rgba(0,0,0,0.4);
+  text-align: center;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.banner span:hover{
+  color:#fff;
+}
+.banner span.next{
+  right:0;
+}
+.banner span.prve{
+  left:0;
+}
