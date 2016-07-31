@@ -76,7 +76,7 @@ class Slider extends React.Component {
     // let liNode=[];
     // for (let i = 0;i<this.props.imgList.length;i++){
     //   liNode.push(
-    //     <li key={i} style={this.styles.li}><img src={imgList[i]}/></li>
+    //   <li key={i} style={this.styles.li}><img src={imgList[i]}/></li>
     //   );
     // }
 
